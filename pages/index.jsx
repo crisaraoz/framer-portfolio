@@ -64,7 +64,7 @@ const Home = () => {
             <ProjectsBtn />
           </motion.h2> 
           */}
-          <div className="text-sm absolute bottom-4 left-0 right-0 mb-8 max-lg:mb-16 text-gray-400" >
+          <div className="text-sm absolute bottom-4 left-0 right-0 mb-9 max-lg:mb-14 text-gray-400" >
           <Footer />
           </div>
           
