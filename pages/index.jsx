@@ -1,11 +1,25 @@
+import { useEffect, useState } from "react";	
 import { motion } from "framer-motion";
-
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import { fadeIn } from "../variants";
 import Footer from "../components/Footer";
 
 const Home = () => {
+  const [showProjectsBtn, setShowProjectsBtn] = useState(true);
+  // Effect to hide button on mobile
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      setShowProjectsBtn(screenWidth > 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
@@ -19,8 +33,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Hello there! I'm a<br /> {" "}
-            <span className="text-accent">Software developer</span>
+            Hi, I'm a<br /> {" "}
+            <span className="text-accent">Software Engineer</span>
           </motion.h1>
 
           {/* subtitle */}
@@ -29,16 +43,17 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 "
           >
-            Enthusiastic developer based in Buenos Aires, Argentina.
-            Solid background in building and optimizing interactive, scalable web applications.
+            Experienced in creating scalable and intuitive web applications. Proudly based in Buenos Aires, Argentina.
           </motion.p>
           
-          {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
-          </div>
+          {/* btn 
+          {showProjectsBtn && (
+            <div className="flex justify-center xl:hidden relative">
+              <ProjectsBtn />
+            </div>
+          )}
            <motion.h2
             variants={fadeIn("down", 0.4)}
             initial="hidden"
@@ -48,7 +63,11 @@ const Home = () => {
           >
             <ProjectsBtn />
           </motion.h2> 
+          */}
+          <div className="text-sm absolute bottom-4 left-0 right-0 mb-8 max-lg:mb-16 text-gray-400" >
           <Footer />
+          </div>
+          
         </div>
       </div>
       {/* image */}
@@ -62,18 +81,6 @@ const Home = () => {
 
         {/* particles */}
         <ParticlesContainer />
-
-        {/* avatar */}
-        <motion.div
-          variants={fadeIn("up", 0.5)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
-        >
-          {/* <Avatar /> */}
-        </motion.div>
       </div>      
     </div>
   );
