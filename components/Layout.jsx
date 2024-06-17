@@ -37,8 +37,6 @@ const Layout = ({ children }) => {
       <Header />
       {/* main content */}
       {children}
-      
-      <Footer />
     </main>
   );
 };
