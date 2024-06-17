@@ -10,22 +10,22 @@ import {
 export const socialData = [
   {
     name: "Linkedin",
-    link: "https://youtube.com",
+    link: "https://www.linkedin.com/in/cris-araoz/",
     Icon: RiLinkedinLine,
   },
   {
     name: "Instagram",
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/cris.araozz/",
     Icon: RiInstagramLine,
   },
   {
     name: "Gmail",
-    link: "https://instagram.com",
+    link: "mailto:araozcristian@gmail.com",
     Icon: RiMailLine,
   },
   {
     name: "Github",
-    link: "https://github.com/sanidhyy/modern-portfolio",
+    link: "https://github.com/crisaraoz",
     Icon: RiGithubLine,
   },
 ];

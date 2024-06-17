@@ -1,8 +1,8 @@
 import { Sora } from "next/font/google";
 import Head from "next/head";
-
 import Header from "../components/Header";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 import TopLeftImg from "../components/TopLeftImg";
 
 // setup font
@@ -35,9 +35,10 @@ const Layout = ({ children }) => {
       <TopLeftImg />
       <Nav />
       <Header />
-
       {/* main content */}
       {children}
+      
+      <Footer />
     </main>
   );
 };

@@ -6,6 +6,8 @@ import {
   FaFigma,
   FaHtml5,
   FaJs,
+  FaNodeJs,
+  FaNode,
   FaReact,
   FaWordpress,
 } from "react-icons/fa";
@@ -13,6 +15,8 @@ import {
   SiAdobephotoshop,
   SiAdobexd,
   SiFramer,
+  SiMongodb,
+  SiMysql,
   SiNextdotjs,
 } from "react-icons/si";
 
@@ -34,7 +38,14 @@ export const aboutData = [
           FaReact,
           SiNextdotjs,
           SiFramer,
-          FaWordpress,
+        ],
+      },
+      {
+        title: "Backend Development",
+        icons: [
+          FaNode,
+          SiMongodb,
+          SiMysql
         ],
       },
       {
@@ -44,49 +55,32 @@ export const aboutData = [
     ],
   },
   {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
-  {
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "FullStack Developer - NTT Data",
+        stage: "2023 - 2024",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Software Developer - EY",
+        stage: "2022 - 2023",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Software Developer - Vision+",
+        stage: "2020 - 2022",
       },
     ],
   },
   {
-    title: "credentials",
+    title: "academic background",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Web Development - DigitalHouse",
+        stage: "2020",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Business Analyst Diploma - IFTS Institute",
+        stage: "2016-2019",
       },
     ],
   },
@@ -153,7 +147,7 @@ const About = () => {
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />
+                  <CountUp start={0} end={20} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients.
@@ -163,20 +157,10 @@ const About = () => {
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} />
+                  <CountUp start={0} end={40} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects.
-                </div>
-              </div>
-
-              {/* awards */}
-              <div className="relative flex-1">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards.
                 </div>
               </div>
             </div>

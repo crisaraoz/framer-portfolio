@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import { fadeIn } from "../variants";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Hi! I'm a<br /> {" "}
+            Hello there! I'm a<br /> {" "}
             <span className="text-accent">Software developer</span>
           </motion.h1>
 
@@ -47,6 +48,7 @@ const Home = () => {
           >
             <ProjectsBtn />
           </motion.h2> 
+          <Footer />
         </div>
       </div>
       {/* image */}
@@ -72,7 +74,7 @@ const Home = () => {
         >
           {/* <Avatar /> */}
         </motion.div>
-      </div>
+      </div>      
     </div>
   );
 };
