@@ -75,6 +75,10 @@ export const aboutData = [
     title: "academic background",
     info: [
       {
+        title: "Game Programming - Da Vinci Institute",
+        stage: "2021",
+      },
+      {
         title: "Web Development - DigitalHouse",
         stage: "2020",
       },
@@ -168,13 +172,7 @@ const About = () => {
         </div>
 
         {/* info */}
-        <motion.h2
-          variants={fadeIn("left", 0.4)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
-        >
+        <div className="flex-1">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemI) => (
               <div
@@ -190,29 +188,38 @@ const About = () => {
             ))}
           </div>
 
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemI) => (
+          <div className="py-2 xl:py-6">
+            {aboutData.map((item, itemI) => (
               <div
                 key={itemI}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                className={`${
+                  index === itemI ? "block" : "hidden"
+                } py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start`}
               >
-                {/* title */}
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
+                {item.info.map((subItem, subItemI) => (
+                  <div
+                    key={subItemI}
+                    className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                  >
+                    {/* title */}
+                    <div className="font-light mb-2 md:mb-0">{subItem.title}</div>
+                    <div className="hidden md:flex">-</div>
+                    <div>{subItem.stage}</div>
 
-                <div className="flex gap-x-4">
-                  {/* icons */}
-                  {item.icons?.map((Icon, iconI) => (
-                    <div key={iconI} className="text-2xl text-white">
-                      <Icon />
+                    <div className="flex gap-x-4">
+                      {/* icons */}
+                      {subItem.icons?.map((Icon, iconI) => (
+                        <div key={iconI} className="text-2xl text-white">
+                          <Icon />
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             ))}
           </div>
-        </motion.h2>
+        </div>
       </div>
     </div>
   );

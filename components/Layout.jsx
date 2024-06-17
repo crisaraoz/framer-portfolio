@@ -4,7 +4,9 @@ import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import TopLeftImg from "../components/TopLeftImg";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
+import ProjectsBtn from "../components/ProjectsBtn";
 // setup font
 const sora = Sora({
   subsets: ["latin"],
