@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 33.333px;
+      }
+
+      .cls-1 {
+        text-anchor: middle;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Arial;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #ce0000;
+      }
+    </style>
+  </defs>
+  <text id="cristian_araoz_." data-name="cristian araoz ." class="cls-1" transform="translate(959.998 620.434) scale(7.418)"><tspan x="0"><tspan class="cls-2">cristian</tspan> araoz<tspan class="cls-3">.</tspan></tspan></text>
+</svg>
