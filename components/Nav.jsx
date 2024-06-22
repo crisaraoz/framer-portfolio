@@ -17,16 +17,16 @@ export const navData = [
   { name: "about", path: "/about", Icon: HiUser },
   { name: "services", path: "/services", Icon: HiRectangleGroup },
   { name: "work", path: "/work", Icon: HiViewColumns },
-  {
-    name: "testimonials",
-    path: "/testimonials",
-    Icon: HiChatBubbleBottomCenterText,
-  },
-  {
-    name: "contact",
-    path: "/contact",
-    Icon: HiEnvelope,
-  },
+  // {
+  //   name: "testimonials",
+  //   path: "/testimonials",
+  //   Icon: HiChatBubbleBottomCenterText,
+  // },
+  // {
+  //   name: "contact",
+  //   path: "/contact",
+  //   Icon: HiEnvelope,
+  // },
 ];
 
 const Nav = () => {

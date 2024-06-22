@@ -13,48 +13,38 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
+          title: "Ecommerce",
+          path: "/proy_ecommerce2.jpg",
+          link: "https://github.com/crisaraoz/ecommerceSanity_stripes",
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
+          title: "IFTS4",
+          path: "/proy_ifts4.jpg",
+          link: "https://crisaraoz.github.io/webifts/",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
+          title: "Clon Disney",
+          path: "/proy_clonDisney1.jpg",
+          link: "https://crisaraoz.github.io/disney-plus/home",
         },
         {
-          title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
+          title: "Resume",
+          path: "/proy_resume.jpg",
+          link: "https://portfolio-ca-beta.vercel.app/",
         },
       ],
     },
     {
       images: [
         {
-          title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
+          title: "Fulbito system",
+          path: "/proy_fulbitoSystem.jpg",
+          link: "https://github.com/crisaraoz/FulbitoSystem",
         },
         {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
+          title: "Pokedex",
+          path: "/proy_pokedex.jpg",
+          link: "https://pokedex-challenge-beta.vercel.app/",
         },
       ],
     },
