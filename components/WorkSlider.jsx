@@ -13,48 +13,33 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
+          title: "Ecommerce",
+          path: "/proy_ecommerce2.jpg",
+          link: "https://github.com/crisaraoz/ecommerceSanity_stripes",
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
+          title: "IFTS4",
+          path: "/proy_ifts4.jpg",
+          link: "https://crisaraoz.github.io/webifts/",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
+          title: "Clon Disney",
+          path: "/proy_clonDisney1.jpg",
+          link: "https://crisaraoz.github.io/disney-plus/home",
         },
         {
-          title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
+          title: "Resume",
+          path: "/proy_resume.jpg",
+          link: "https://portfolio-ca-beta.vercel.app/",
         },
       ],
     },
     {
       images: [
         {
-          title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
+          title: "Pokedex",
+          path: "/proy_pokedex.jpg",
+          link: "https://pokedex-challenge-beta.vercel.app/",
         },
       ],
     },
@@ -79,7 +64,7 @@ const WorkSlider = () => {
                 className="relative rounded-lg overflow-hidden flex items-center justify-center group"
                 key={imageI}
               >
-                <div className="flex items-center justify-center relative overflow-hidden group">
+                <div className="flex items-center justify-center relative overflow-hidden group" style={{ width: '100%', height: '100%' }}>
                   {/* image */}
                   <Image
                     src={image.path}
