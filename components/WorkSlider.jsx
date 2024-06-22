@@ -37,11 +37,6 @@ const workSlides = {
     {
       images: [
         {
-          title: "Fulbito system",
-          path: "/proy_fulbitoSystem.jpg",
-          link: "https://github.com/crisaraoz/FulbitoSystem",
-        },
-        {
           title: "Pokedex",
           path: "/proy_pokedex.jpg",
           link: "https://pokedex-challenge-beta.vercel.app/",
@@ -69,7 +64,7 @@ const WorkSlider = () => {
                 className="relative rounded-lg overflow-hidden flex items-center justify-center group"
                 key={imageI}
               >
-                <div className="flex items-center justify-center relative overflow-hidden group">
+                <div className="flex items-center justify-center relative overflow-hidden group" style={{ width: '100%', height: '100%' }}>
                   {/* image */}
                   <Image
                     src={image.path}
